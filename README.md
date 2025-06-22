@@ -1,12 +1,53 @@
-# React + Vite
+# 💼 Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This project is built using **React.js**, showcasing my work, skills, and experience in a clean and modern layout.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 📄 Multiple Pages (Home, About, Projects, Contact, etc.)
+- 🧩 Modular Component Structure
+- 🎨 Responsive Design with custom CSS
+- 📁 Asset Management (Images, Icons, etc.)
+- 🔄 Easy to Update and Maintain
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React.js
+- **Styling:** CSS (App.css, index.css)
+- **File Structure:**
+rc/
+├── assets/ # Images and other static resources
+├── components/ # Reusable UI components
+├── pages/ # Page components like Home, About, etc.
+├── App.jsx # Main App component
+├── App.css # Global styles
+├── index.css # Base CSS
+└── main.jsx # App entry point
+
+## 🧠 Folder Overview
+
+- **`assets/`** – Contains images, icons, and other media files.
+- **`components/`** – Reusable UI elements like NavBar, Footer, Cards.
+- **`pages/`** – Full pages like Home, Projects, Contact.
+- **`App.jsx`** – Root component where all routing and main layout is defined.
+- **`main.jsx`** – Application bootstrapper using `ReactDOM`.
+
+## 📦 Getting Started
+
+### 1. Clone the Repository
+
+git clone https://github.com/your-username/portfolio.git
+cd portfolio
+2. Install Dependencies
+npm install
+3. Run the Development Server
+npm run dev
+4. Build for Production
+npm run build
+🌐 Deployment
+You can deploy this portfolio on platforms like:
+Vercel
+Netlify
+Render
+🙌 Contributing
+This is a personal project, but feel free to fork it and build your own version. Pull requests and suggestions are welcome!
