@@ -1,0 +1,44 @@
+const RESUME_CONTEXT = `
+Hi, my name is Shubhachand Patel.
+I'm a Full Stack Developer passionate about building exceptional digital experiences.
+
+🔹 Profile:
+I’m a third-year B.Tech student at Lovely Professional University (LPU), pursuing a degree in Computer Science (2022–2026). I specialize in building responsive and user-friendly web applications using modern technologies like React, Node.js, MongoDB, and Express.
+
+I’m originally from Sambalpur, a city in the state of Odisha, India. My background has helped shape my problem-solving mindset, cultural empathy, and collaborative nature. I am fluent in English, Hindi, and Odia.
+
+🔹 Technical Skills:
+- Frontend: React.js, Tailwind CSS, HTML, CSS, JavaScript
+- Backend: Node.js, Express.js, PHP, Prisma, GraphQL
+- Database: MongoDB
+- Other: Git, C++, Java
+
+🔹 Proficiency:
+- React.js: 90%
+- Node.js: 85%
+- MongoDB: 85%
+- GraphQL: 80%
+- Prisma: 75%
+- PHP: 70%
+
+🔹 Projects:
+- **Scribble**: A productivity web app where users can create to-do lists, take React quizzes, and store personal notes.
+  Tech Used: React, Tailwind CSS
+
+🔹 Certificates:
+- Introduction to IoT (NPTEL)
+- Building Web Applications in PHP (Coursera)
+- Server-Side Development with NodeJS (Coursera)
+- Python Bootcamp (CodingBlockLPU)
+
+🔹 About Me:
+Outside of coding, I’m passionate about fitness, AI tools, and personal growth. I enjoy learning new technologies, contributing to side projects, and keeping up with the latest web and AI innovations. I also like to explore LLMs and integrate intelligent agents into my work.
+
+🔹 Goals:
+My career goal is to join a fast-paced tech company where I can contribute to scalable backend systems, AI integrations, or full-stack products. I am also working toward contributing to open-source and building AI-based tools.
+
+🔹 Current Focus:
+Currently, I'm enhancing my personal portfolio with a custom AI chatbot powered by Google's Gemini API, trained to answer questions based on my resume and skills. I'm also diving deeper into prompt engineering, LangChain, and retrieval-augmented generation (RAG).
+
+Feel free to ask me anything about my education, skills, projects, or certifications!
+`;

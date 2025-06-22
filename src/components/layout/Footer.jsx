@@ -3,16 +3,16 @@ import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'; // Install rea
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white w-full mt-auto">
+    <footer className="bg-gray-800 text-white  mt-auto">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <h3 className="text-xl font-bold mb-4">Shubhachand Patel</h3>
-            <p className="text-gray-300">B.Tech |Web Developer</p>
+            <p className="text-gray-300">B.Tech | Web Developer</p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-4">Quick Links</h3>
-            <ul className="space-y-2">
+            <ul className=" flex items-center justify-between ">
               <li><Link to="/" className="text-gray-300 hover:text-white transition duration-300">Home</Link></li>
               <li><Link to="/about" className="text-gray-300 hover:text-white transition duration-300">About</Link></li>
               <li><Link to="/projects" className="text-gray-300 hover:text-white transition duration-300">Projects</Link></li>
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-700 text-center">
-          <p className="text-gray-300">© {new Date().getFullYear()} Your Name. All rights reserved.</p>
+          <p className="text-gray-300">© {new Date().getFullYear()} Shubhachand. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -8,6 +8,7 @@ import ContactPage from "./pages/ContactPage";
 // import { FaCertificate } from "react-icons/fa";
 // import Certificates from "./components/sections/Certifications";
 import CertificatePage from "./pages/CertificatePage";
+import ChatBot from "./components/GEMINI/ChatBot";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           </Routes>
         </main>
         <Footer />
+          <ChatBot/> 
       </div>
     </Router>
   );

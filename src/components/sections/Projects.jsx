@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { FaGithub, FaExternalLinkAlt, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import scribbler from "../image/scribbler.png";
-import bubblesort from "../image/bubble.png"; // Import your bubble sort image
-import travel from '/src/assets/travel.png'
+import bubblesort from "../image/bubble.png";
+import travel from '/src/assets/travel.png';
+
 const Projects = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
@@ -10,26 +11,26 @@ const Projects = () => {
     {
       title: "Scribble",
       description: "A web application that allows users to create to-do lists, take React quizzes, and store notes.",
-      image: scribbler, // Add your project screenshot
-      technologies: ["React","Tailwind CSS"],
-      liveLink: "https://scribler.netlify.app/", // Add your Netlify deployment link
-      githubLink: "https://github.com/Shubhachand/PepReactProject.git" // Add your GitHub repository link
+      image: scribbler,
+      technologies: ["React", "Tailwind CSS"],
+      liveLink: "https://scribler.netlify.app/",
+      githubLink: "https://github.com/Shubhachand/PepReactProject.git"
     },
     {
       title: "Travel Website",
       description: "A modern travel booking platform with features for discovering destinations, planning trips, and booking accommodations.",
       image: travel,
-      technologies: ["React", "Tailwind CSS","netlify"],
-      liveLink: "https://shub-travel.netlify.app/", // Add your Netlify deployment link
-      githubLink: "https://github.com/Shubhachand/travel.git" // Add your GitHub repository link
+      technologies: ["React", "Tailwind CSS", "Netlify"],
+      liveLink: "https://shub-travel.netlify.app/",
+      githubLink: "https://github.com/Shubhachand/travel.git"
     },
     {
       title: "Bubble Sort Visualizer",
       description: "An interactive tool that visually demonstrates the bubble sort algorithm with customizable array sizes and sorting speeds.",
       image: bubblesort,
-      technologies: ["React","DSA",  "CSS"],
-      liveLink: "https://bubblesortvirtue.netlify.app/", // Add your Netlify deployment link
-      githubLink: "https://github.com/Shubhachand/BubbleSortVirtue-.git" // Add your GitHub repository link
+      technologies: ["React", "DSA", "CSS"],
+      liveLink: "https://bubblesortvirtue.netlify.app/",
+      githubLink: "https://github.com/Shubhachand/BubbleSortVirtue-.git"
     }
   ];
 
@@ -46,39 +47,39 @@ const Projects = () => {
   };
 
   return (
-    <div id="projects" className="py-20 bg-[#1E1E1E] text-white">
+    <div id="projects" className="py-20 bg-gradient-to-br from-[#181818] via-[#232526] to-[#1E1E1E] text-white min-h-screen">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl font-bold text-center mb-12">Projects</h2>
+        <h2 className="text-4xl font-extrabold text-center mb-12 tracking-tight bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+          Projects
+        </h2>
         
         <div className="relative">
-          <div className="overflow-hidden rounded-2xl">
+          <div className="overflow-hidden rounded-3xl shadow-2xl backdrop-blur-lg bg-white/10 border border-white/20">
             <div className="relative">
               {/* Project Card */}
               <div 
-                className="bg-[#2A2A2A] rounded-2xl overflow-hidden cursor-pointer group"
-                onClick={() => handleProjectClick(projects[currentSlide].liveLink)}
+                className="bg-gradient-to-br from-[#232526] to-[#1E1E1E] rounded-3xl overflow-hidden cursor-pointer group transition-transform duration-300 hover:scale-[1.02] shadow-xl"
+          
               >
                 <div className="relative">
                   <img 
                     src={projects[currentSlide].image} 
                     alt={projects[currentSlide].title}
-                    className="w-full h-64 object-cover transition duration-300 group-hover:opacity-80"
+                    className="w-full h-64 sm:h-80 object-cover transition duration-500 group-hover:opacity-80"
                   />
-                  <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 bg-black/50">
-                    <span className="text-white text-lg font-semibold">Click to View Live Project</span>
-                  </div>
+                  
                 </div>
                 
-                <div className="p-6">
-                  <h3 className="text-2xl font-bold mb-3">{projects[currentSlide].title}</h3>
-                  <p className="text-gray-300 mb-4">{projects[currentSlide].description}</p>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold mb-2 text-blue-300 drop-shadow-lg">{projects[currentSlide].title}</h3>
+                  <p className="text-gray-300 mb-6">{projects[currentSlide].description}</p>
                   
                   {/* Technologies */}
-                  <div className="flex flex-wrap gap-2 mb-6">
+                  <div className="flex flex-wrap gap-2 mb-8">
                     {projects[currentSlide].technologies.map((tech, i) => (
                       <span 
                         key={i} 
-                        className="bg-[#333333] px-3 py-1 rounded-full text-sm"
+                        className="bg-gradient-to-r from-blue-600 to-purple-600 px-3 py-1 rounded-full text-xs font-semibold shadow hover:from-pink-500 hover:to-yellow-500 transition-colors"
                       >
                         {tech}
                       </span>
@@ -92,18 +93,18 @@ const Projects = () => {
                         e.stopPropagation();
                         handleProjectClick(projects[currentSlide].githubLink);
                       }}
-                      className="flex items-center gap-2 bg-[#333333] px-4 py-2 rounded-lg hover:bg-[#444444] transition duration-300"
+                      className="flex items-center gap-2 bg-[#232526] px-4 py-2 rounded-lg hover:bg-[#33334d] transition duration-300 border border-white/20 shadow"
                     >
-                      <FaGithub /> Code
+                      <FaGithub /> <span className="font-medium">Code</span>
                     </button>
                     <button 
                       onClick={(e) => {
                         e.stopPropagation();
                         handleProjectClick(projects[currentSlide].liveLink);
                       }}
-                      className="flex items-center gap-2 bg-blue-600 px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                      className="flex items-center gap-2 bg-gradient-to-r from-blue-500 to-purple-500 px-4 py-2 rounded-lg hover:from-pink-500 hover:to-yellow-500 transition duration-300 border border-white/20 shadow"
                     >
-                      <FaExternalLinkAlt /> Live Demo
+                      <FaExternalLinkAlt /> <span className="font-medium">Live Demo</span>
                     </button>
                   </div>
                 </div>
@@ -115,7 +116,8 @@ const Projects = () => {
                   e.stopPropagation();
                   prevSlide();
                 }}
-                className="absolute left-0 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-r-lg hover:bg-black/70 transition"
+                className="absolute left-2 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full hover:bg-blue-600 transition shadow-lg z-10"
+                aria-label="Previous project"
               >
                 <FaChevronLeft className="text-2xl" />
               </button>
@@ -124,7 +126,8 @@ const Projects = () => {
                   e.stopPropagation();
                   nextSlide();
                 }}
-                className="absolute right-0 top-1/2 -translate-y-1/2 bg-black/50 p-3 rounded-l-lg hover:bg-black/70 transition"
+                className="absolute right-2 top-1/2 -translate-y-1/2 bg-black/60 p-3 rounded-full hover:bg-pink-500 transition shadow-lg z-10"
+                aria-label="Next project"
               >
                 <FaChevronRight className="text-2xl" />
               </button>
@@ -132,7 +135,7 @@ const Projects = () => {
           </div>
 
           {/* Dots Navigation */}
-          <div className="flex justify-center mt-6 gap-2">
+          <div className="flex justify-center mt-8 gap-3">
             {projects.map((_, index) => (
               <button
                 key={index}
@@ -140,9 +143,12 @@ const Projects = () => {
                   e.stopPropagation();
                   setCurrentSlide(index);
                 }}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                  currentSlide === index ? 'bg-white' : 'bg-gray-600'
-                }`}
+                className={`w-4 h-4 rounded-full border-2 border-white transition-all duration-300
+                  ${currentSlide === index 
+                    ? 'bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 shadow-lg scale-125'
+                    : 'bg-gray-700 opacity-70 hover:opacity-100'
+                  }`}
+                aria-label={`Go to project ${index + 1}`}
               />
             ))}
           </div>
