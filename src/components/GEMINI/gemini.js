@@ -21,7 +21,7 @@ let chat = null;
  */
 async function initChat() {
   if (!chat) {
-    const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
+    const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash" });
 
     chat = await model.startChat({
       history: [],

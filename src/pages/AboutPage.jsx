@@ -1,4 +1,4 @@
-import About from '../components/sections/About';
+import About from '../components/sections/About.jsx';
 // import Education from '../components/sections/Education';
 
 const AboutPage = () => {
